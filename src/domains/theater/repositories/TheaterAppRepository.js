@@ -1,0 +1,98 @@
+const theaterAppCatalog = [
+  {
+    slug: "youtube",
+    name: "YouTube",
+    baseUrl: "https://www.youtube.com",
+    description: "Videos, music, and live channels.",
+    iconText: "YT",
+    accentColor: "#ff2f2f",
+    requiresLogin: false,
+  },
+  {
+    slug: "netflix",
+    name: "Netflix",
+    baseUrl: "https://www.netflix.com",
+    description: "Movies, series, and originals.",
+    iconText: "N",
+    accentColor: "#e50914",
+    requiresLogin: true,
+  },
+  {
+    slug: "hulu",
+    name: "Hulu",
+    baseUrl: "https://www.hulu.com",
+    description: "Shows, movies, and live TV options.",
+    iconText: "H",
+    accentColor: "#1ce783",
+    requiresLogin: true,
+  },
+  {
+    slug: "disney-plus",
+    name: "Disney+",
+    baseUrl: "https://www.disneyplus.com",
+    description: "Disney, Pixar, Marvel, Star Wars, and more.",
+    iconText: "D+",
+    accentColor: "#1f80e0",
+    requiresLogin: true,
+  },
+  {
+    slug: "twitch",
+    name: "Twitch",
+    baseUrl: "https://www.twitch.tv",
+    description: "Live streaming and creator channels.",
+    iconText: "Tw",
+    accentColor: "#9147ff",
+    requiresLogin: false,
+  },
+  {
+    slug: "plex",
+    name: "Plex",
+    baseUrl: "https://app.plex.tv",
+    description: "Personal libraries and ad-supported content.",
+    iconText: "Px",
+    accentColor: "#e5a00d",
+    requiresLogin: true,
+  },
+  {
+    slug: "crunchyroll",
+    name: "Crunchyroll",
+    baseUrl: "https://www.crunchyroll.com",
+    description: "Anime streaming and simulcasts.",
+    iconText: "CR",
+    accentColor: "#f47521",
+    requiresLogin: true,
+  },
+  {
+    slug: "max",
+    name: "Max",
+    baseUrl: "https://play.max.com",
+    description: "HBO series, movies, and premium content.",
+    iconText: "Mx",
+    accentColor: "#5f42ff",
+    requiresLogin: true,
+  },
+  {
+    slug: "kick",
+    name: "Kick",
+    baseUrl: "https://kick.com",
+    description: "Live creators and gaming streams.",
+    iconText: "K",
+    accentColor: "#52ff00",
+    requiresLogin: false,
+  },
+  {
+    slug: "x",
+    name: "X",
+    baseUrl: "https://x.com",
+    description: "Live trends, posts, and video clips.",
+    iconText: "X",
+    accentColor: "#d7d7d7",
+    requiresLogin: false,
+  },
+];
+
+async function getTheaterAppCatalog() {
+  return theaterAppCatalog;
+}
+
+export { getTheaterAppCatalog };
