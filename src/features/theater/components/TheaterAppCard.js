@@ -5,6 +5,13 @@ function getCardStyle(accentColor) {
   };
 }
 
+function getOpenButtonStyle(accentColor) {
+  return {
+    background: `linear-gradient(135deg, ${accentColor} 0%, ${accentColor}cc 100%)`,
+    boxShadow: `0 8px 18px ${accentColor}4d`,
+  };
+}
+
 function TheaterAppCard({ app }) {
   return (
     <article
@@ -29,7 +36,8 @@ function TheaterAppCard({ app }) {
       <div className="mt-auto flex flex-wrap items-center gap-2">
         <a
           href={app.launchUrl}
-          className="inline-flex min-h-10 flex-1 items-center justify-center rounded-lg bg-white/90 px-3 py-2 text-sm font-semibold text-black transition hover:bg-white"
+          className="inline-flex min-h-10 flex-1 items-center justify-center rounded-lg px-3 py-2 text-sm font-semibold text-white transition hover:brightness-110 active:scale-[0.99]"
+          style={getOpenButtonStyle(app.accentColor)}
         >
           Open App
         </a>
